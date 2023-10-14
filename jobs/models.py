@@ -33,7 +33,7 @@ class Jobs(models.Model):
     required_skills = models.TextField(max_length=2500)
     education = models.TextField(max_length=2500)
     experience = models.IntegerField()
-    create_date = models.DateTimeField(default=timezone.now())
+    create_date = models.DateTimeField(default=timezone.now)
     application_date = models.DateField()
     number_of_vacancies = models.PositiveIntegerField()
     job_nature = models.CharField(choices=JOB_NATURE_CHOICES, max_length=50)
